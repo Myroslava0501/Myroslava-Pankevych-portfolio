@@ -1,0 +1,144 @@
+:root {
+  --color: #333;
+  --font-family: "Source Sans Pro", sans-serif;
+  --secondary-color: rgb(90, 164, 238);
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 200;
+}
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  position: Absolute;
+  left: 50px;
+}
+.header__logo-img {
+  height: 70px;
+  border-radius: 35px;
+}
+.nav {
+  position: Absolute;
+  right: 50px;
+}
+.header__logo-sub {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.header__logo-sub:hover {
+  color: var(--secondary-color);
+}
+.nav-link {
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+
+.projects {
+  background-position: center;
+
+  text-align: center;
+}
+
+.project-overview {
+  font-family: var(--font-family);
+  color: var(--color);
+  padding: 200px 250px 0px 250px;
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 0.8),
+    rgba(245, 245, 245, 0.8)
+  );
+  height: 500px;
+}
+
+h1 {
+  font-size: 66px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #111;
+  font-weight: 800;
+  margin-top: 40px;
+}
+
+p {
+  color: var(--color);
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+  line-height: 1.6;
+  margin-bottom: 120px;
+}
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.container {
+  margin: 0 auto;
+}
+
+.project-img {
+  width: 400px;
+}
+.project-discription {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #666;
+  text-align: start;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+h4 {
+  font-size: 22px;
+  text-align: start;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills__skill-project {
+  padding: 3px 5px;
+  margin-left: 12px;
+  font-size: 17px;
+  background: rgba(153, 153, 153, 0.2);
+  border-radius: 5px;
+  font-weight: 600;
+  color: #666;
+}
+.btn {
+  width: 110px;
+  display: block;
+  padding: 10px 15px;
+  font-size: 17px;
+  font-family: var(--font-family);
+  color: white;
+  background: var(--secondary-color);
+  border-radius: 15px;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 30%);
+  transition: all 200ms ease-in-out;
+  margin: 0 auto;
+  margin-top: 35px;
+}
