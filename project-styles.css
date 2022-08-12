@@ -26,10 +26,7 @@ header {
   height: 70px;
   border-radius: 35px;
 }
-.nav {
-  position: Absolute;
-  right: 50px;
-}
+
 .header__logo-sub {
   font-size: 25px;
   font-weight: 700;
@@ -44,6 +41,12 @@ header {
 .header__logo-sub:hover {
   color: var(--secondary-color);
 }
+.nav {
+  position: Absolute;
+  right: 50px;
+  flex-shrink: 0;
+  top: 40px;
+}
 .nav-link {
   color: #333;
   text-transform: uppercase;
@@ -53,6 +56,20 @@ header {
 }
 .nav-link:hover {
   color: var(--secondary-color);
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+}
+.burger {
+  position: absolute;
+  right: 40px;
+  cursor: pointer;
+  display: none;
+  top: 40px;
 }
 
 .projects {
@@ -160,4 +177,52 @@ footer {
   opacity: 0.8;
   font-style: italic;
   margin: 0 auto;
+}
+@media (max-width: 1385px) {
+  .project-overview {
+    padding-top: 140px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1032px) {
+  .project-overview {
+    height: 400px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .skills__skill-project {
+    font-size: 12px;
+  }
+  .project-discription {
+    font-size: 14px;
+  }
+}
+@media (max-width: 945px) {
+  .header__logo-sub {
+    font-size: 15px;
+  }
+  .nav-link {
+    font-size: 15px;
+  }
+  p {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 840px) {
+  .project-overview {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

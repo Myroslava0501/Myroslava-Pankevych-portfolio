@@ -30,20 +30,27 @@
         />
         <a class="header__logo-sub" href="index.html">Myroslava Pankevych</a>
       </div>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="index.html#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Projects.html">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line1"></div>
+          <div class="line1"></div>
+        </div>
+      </nav>
     </header>
     <section class="contact">
       <div class="contact-overview">
@@ -69,17 +76,18 @@
           </a>
         </div>
         <div class="social-media">
-         <a href="contact.html#contact"
-           class="social-media-icon-link"
+          <a
+            href="contact.html#contact"
+            class="social-media-icon-link"
             rel="noreferrer"
-            target="_blank">
+            target="_blank"
+          >
             <img
               src="images/gmail.png"
               alt="Myroslava Pankevych email"
               class="social-media-icon"
             />
-            </a>
-          
+          </a>
         </div>
         <div class="social-media">
           <a
@@ -106,7 +114,6 @@
           <div class="contact-form-field">
             <label class="contact__form-label" for="name">Name</label>
             <input
-              
               type="text"
               name="name"
               placeholder="Enter Your Name *"
@@ -116,7 +123,6 @@
           <div class="contact-form-field">
             <label class="contact__form-label" for="name">Email</label>
             <input
-              
               type="email"
               name="email"
               placeholder="Enter Your Email Address *"
@@ -125,18 +131,15 @@
           </div>
           <label class="contact__form-label" for="name">Message</label>
           <div class="contact-form-field">
-           <input
-              class="input-message"
-              type="text"   
-            />
+            <input class="input-message" type="text" />
           </div>
           <button class="btn" type="submit">Submit</button>
-          </div>
         </form>
       </div>
     </section>
     <footer>
       <p class="footer-name">Coded by Myroslava Pankevych</p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
