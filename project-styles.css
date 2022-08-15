@@ -182,12 +182,6 @@ footer {
   .project-overview {
     padding-top: 140px;
   }
-  h1 {
-    font-size: 40px;
-  }
-  p {
-    font-size: 25px;
-  }
 }
 
 @media (max-width: 1032px) {
@@ -196,6 +190,13 @@ footer {
     padding-left: 200px;
     padding-right: 200px;
   }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 25px;
+  }
+
   h3 {
     font-size: 20px;
   }
